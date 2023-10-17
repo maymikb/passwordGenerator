@@ -5,8 +5,12 @@ function generatePassword() {
   if(passLength < 8) {
     alert("Cannot be less than 8!!");
     return;
+  }else if(passLength >128){
+    alert("Cannot be more than 128!!");
+    return;
+    
   }
-  
+
 }
 
 
