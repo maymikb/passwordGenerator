@@ -1,4 +1,13 @@
 // Assignment code here
+function generatePassword() {
+  var passLength = prompt("What is the length of your password? (8-128)");
+
+  if(passLength < 8) {
+    alert("Cannot be less than 8!!");
+    return;
+  }
+  
+}
 
 
 // Get references to the #generate element
