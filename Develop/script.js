@@ -1,6 +1,9 @@
 // Assignment code here
 var lowercaseCharacters=['abcdefghijklmnopqrstuvwxyz'];
 var uppercaseCharacters=['ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
+* var specialCharacters=['" !"#$%&*+,-./:;<=>?@\^_`{|}~"']
+//do i put the line above here? should chars include () and []?
+var numericCharacters=['0123456789'];
 
 function generatePassword() {
   var passLength = prompt("What is the length of your password? (8-128)");
