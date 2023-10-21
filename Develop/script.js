@@ -1,9 +1,10 @@
 // Assignment code here
-var lowercaseCharacters=['abcdefghijklmnopqrstuvwxyz'];
-var uppercaseCharacters=['ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
+var lowercaseCharacters='abcdefghijklmnopqrstuvwxyz';
+var uppercaseCharacters='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 //* var specialCharacters=['" !"#$%&*+,-./:;<=>?@\^_`{|}~"']
 //do i put the line above here? should chars include () and []?
-var numericCharacters=['0123456789'];
+var numericCharacters='0123456789';
+var specialCharacters='"!"#$%&*+,-./:;<=>?@\^_`{|}~()"'
 
 function generatePassword() {
   var passLength = prompt("What is the length of your password? (8-128)");
@@ -16,6 +17,52 @@ function generatePassword() {
     return;
     
   }
+
+  // ask if they want lower, upper, numbers or special
+  var lowerCase = confirm("Can lower case characters be included in your password?");
+  var upperCase = confirm("Can upper case characters be included in your password?");
+  //  var
+  //  var
+
+  console.log(lowerCase)
+  console.log(upperCase)
+
+  var basket = "";
+
+  // depending on their answers, add the corresponding characters to the basket
+  if(lowerCase == true) {
+    basket = basket + lowercaseCharacters
+  }
+
+  if(upperCase == true) {
+    basket = basket + uppercaseCharacters
+  }
+
+  // if
+
+  // if
+
+  console.log(basket)
+
+
+  var password = "";
+
+  for(i = 0; i < passLength; i++) {
+    var randomNum = Math.floor(Math.random() * basket.length);
+    var randomChar = basket[randomNum];
+  
+    console.log(randomChar)
+    password = password + randomChar;
+  }
+
+  console.log(password)
+
+
+
+
+  return password;
+
+
 }
 
 
