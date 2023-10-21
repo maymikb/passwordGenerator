@@ -13,10 +13,6 @@ function generatePassword() {
     return;
     
   }
-
-
-  
-  
 }
 
 
