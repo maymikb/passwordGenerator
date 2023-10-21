@@ -21,8 +21,8 @@ function generatePassword() {
   // ask if they want lower, upper, numbers or special
   var lowerCase = confirm("Can lower case characters be included in your password?");
   var upperCase = confirm("Can upper case characters be included in your password?");
-  //  var
-  //  var
+  var numbers= confirm('Can numbers be included in your password?');
+  var special= confirm('can special characters be included in your password?');
 
   console.log(lowerCase)
   console.log(upperCase)
@@ -38,9 +38,13 @@ function generatePassword() {
     basket = basket + uppercaseCharacters
   }
 
-  // if
+   if (numbers==true){
+    basket=basket+ numericCharacters;
+   }
 
-  // if
+   if (special==true){
+    basket= basket + specialCharacters;
+   }
 
   console.log(basket)
 
