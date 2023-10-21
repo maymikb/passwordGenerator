@@ -1,7 +1,7 @@
 // Assignment code here
 var lowercaseCharacters=['abcdefghijklmnopqrstuvwxyz'];
 var uppercaseCharacters=['ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
-* var specialCharacters=['" !"#$%&*+,-./:;<=>?@\^_`{|}~"']
+//* var specialCharacters=['" !"#$%&*+,-./:;<=>?@\^_`{|}~"']
 //do i put the line above here? should chars include () and []?
 var numericCharacters=['0123456789'];
 
@@ -17,6 +17,37 @@ function generatePassword() {
     
   }
 }
+
+
+
+// function generatePassword2() {
+//   var lowerCase = prompt("Can lower case characters be included in your password?");
+//   //if true OR if false, move to the next question
+  
+//   if true [& if false] return;
+// }
+// //could I use if (password.includes?) for the characters?
+
+// function generatePassword3() {
+//   var upperCase = prompt("Can upper case characters be included in your password?");
+//   if ("yes")
+//   return; }
+// else return; 
+
+// function generatePassword4() {
+//   var specialCharacters = prompt("Can special characters characters be included in your password?");
+//   if ("yes")
+//   return; }
+// else return; 
+
+//....OR...INSTEAD...
+//answer each question individually or bginr them up wiht 'yes' no answers?
+
+
+
+
+
+
 
 
 // Get references to the #generate element
