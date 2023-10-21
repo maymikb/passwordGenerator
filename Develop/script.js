@@ -16,7 +16,7 @@ function generatePassword() {
     
   }
 
-  // ask if they want lower, upper, numbers or special
+  // ask if passowrd should include, upper, numbers or special
   var lowerCase = confirm("Can lower case characters be included in your password?");
   var upperCase = confirm("Can upper case characters be included in your password?");
   var numbers= confirm('Can numbers be included in your password?');
@@ -25,33 +25,33 @@ function generatePassword() {
   console.log(lowerCase);
   console.log(upperCase);
 
-  var basket = "";
+  var choices = "";
 
   // depending on their answers, add the corresponding characters to the basket
   if(lowerCase == true) {
-    basket = basket + lowercaseCharacters;
+    choices = choices + lowercaseCharacters;
   }
 
   if(upperCase == true) {
-    basket = basket + uppercaseCharacters;
+    choices = choices + uppercaseCharacters;
   }
 
    if (numbers==true){
-    basket=basket+ numericCharacters;
+    choices=choices+ numericCharacters;
    }
 
    if (special==true){
-    basket= basket + specialCharacters;
+    choices= choices + specialCharacters;
    }
 
-  console.log(basket)
+  console.log(choices)
 
 
   var password = "";
 
   for(i = 0; i < passLength; i++) {
-    var randomNum = Math.floor(Math.random() * basket.length);
-    var randomChar = basket[randomNum];
+    var randomNum = Math.floor(Math.random() * choices.length);
+    var randomChar = choices[randomNum];
   
     console.log(randomChar)
     password = password + randomChar;
@@ -66,37 +66,6 @@ function generatePassword() {
 
 
 }
-
-
-
-// function generatePassword2() {
-//   var lowerCase = prompt("Can lower case characters be included in your password?");
-//   //if true OR if false, move to the next question
-  
-//   if true [& if false] return;
-// }
-// //could I use if (password.includes?) for the characters?
-
-// function generatePassword3() {
-//   var upperCase = prompt("Can upper case characters be included in your password?");
-//   if ("yes")
-//   return; }
-// else return; 
-
-// function generatePassword4() {
-//   var specialCharacters = prompt("Can special characters characters be included in your password?");
-//   if ("yes")
-//   return; }
-// else return; 
-
-//....OR...INSTEAD...
-//answer each question individually or bginr them up wiht 'yes' no answers?
-
-
-
-
-
-
 
 
 // Get references to the #generate element
