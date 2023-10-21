@@ -1,8 +1,6 @@
 // Assignment code here
 var lowercaseCharacters='abcdefghijklmnopqrstuvwxyz';
 var uppercaseCharacters='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-//* var specialCharacters=['" !"#$%&*+,-./:;<=>?@\^_`{|}~"']
-//do i put the line above here? should chars include () and []?
 var numericCharacters='0123456789';
 var specialCharacters='"!"#$%&*+,-./:;<=>?@\^_`{|}~()"'
 
@@ -24,18 +22,18 @@ function generatePassword() {
   var numbers= confirm('Can numbers be included in your password?');
   var special= confirm('can special characters be included in your password?');
 
-  console.log(lowerCase)
-  console.log(upperCase)
+  console.log(lowerCase);
+  console.log(upperCase);
 
   var basket = "";
 
   // depending on their answers, add the corresponding characters to the basket
   if(lowerCase == true) {
-    basket = basket + lowercaseCharacters
+    basket = basket + lowercaseCharacters;
   }
 
   if(upperCase == true) {
-    basket = basket + uppercaseCharacters
+    basket = basket + uppercaseCharacters;
   }
 
    if (numbers==true){
@@ -59,7 +57,7 @@ function generatePassword() {
     password = password + randomChar;
   }
 
-  console.log(password)
+  console.log(password);
 
 
 
