@@ -1,4 +1,7 @@
 // Assignment code here
+var lowercaseCharacters=['abcdefghijklmnopqrstuvwxyz'];
+var uppercaseCharacters=['ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
+
 function generatePassword() {
   var passLength = prompt("What is the length of your password? (8-128)");
 
