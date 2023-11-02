@@ -14,5 +14,5 @@ IF any of the answers above are not within the given parameters, an alert will b
 IT is done when a random password is generated following the previously selected criteria. 
 
 ## Screenshot
-![](./ScreenshotPasswordGenerator.png)
+![](ScreenshotPasswordGenerator.png)
 
