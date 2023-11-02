@@ -13,3 +13,6 @@ THEN I am presented with different prompts for character types to include in the
 IF any of the answers above are not within the given parameters, an alert will be displayed on the page to inform you of your mistake BEFORE moving on to the next prompt
 IT is done when a random password is generated following the previously selected criteria. 
 
+## Screenshot
+![](./ScreenshotPasswordGenerator.png)
+
